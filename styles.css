@@ -1,0 +1,173 @@
+:root {
+
+    --background: #fff;
+
+    --white: #FFF;
+
+    --black: #000;
+
+    --blue: #1a73e8;
+
+    --grey: #dfe1e5;
+    
+
+}
+
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+
+    color: var(--black);
+
+    box-sizing: border-box;
+
+}
+
+body {
+    /* Display flex para orientar a direção dos objetos */
+    height: 100vh;
+    width: 100%;
+    display: flex;  
+    flex-direction: column;
+    /* Alinhamentos do elementos filhos em orientação do X E Y*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    /* espaçamento entre itens */
+    gap: 16px;
+    /* Distancia entre as divs pais */
+    padding: 14px;
+    font-size: 14px;
+    align-items: center;
+}
+
+header svg{
+    width: 24px;
+}
+
+header button{
+    background: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0;
+}
+
+header a{
+    /* Usado para tirar ___ ou italicos do texto */
+    text-decoration: none ;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grey);
+
+    /* 9999px é o limite maximo usado para arredondamentos de bordas */
+    border-radius: 9999px;
+    padding: 8px 16px;
+    width: 36%;
+
+}
+
+.pesquisa input{
+    border: 0;
+    background: none;
+    
+    /* remove borda quando focado */
+    outline: 0;
+    width: 100%;
+}
+
+.pesquisa svg{
+    width: 20px;
+}
+
+.botoes-pesquisa {
+    display: flex;
+    gap: 8px;
+}
+
+.botoes-pesquisa button{
+    border: 0;
+    background: none;
+}
+
+.botoes{
+    display: flex;
+    gap: 24px;
+}
+
+.botoes button{
+    border: 0;
+    background: #f8f9fa;
+    padding: 10px 20px;
+    color: #3c4043;
+    font-size: 16px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 15px;
+}
+
+.top {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    float: left;
+
+}
+
+.down {
+    padding: 18px;
+    background-color: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    bottom: 0;
+}
+
+footer ul li {
+    display: inline;
+    color: #666666;
+}
+
+#footer_esquerdo {
+    float: left;
+}
+
+#footer_direito {
+    float: right;
+}
+
+
+footer a{
+    text-decoration: none ;
+}
+
+a:hover {
+    text-decoration: underline;
+}
